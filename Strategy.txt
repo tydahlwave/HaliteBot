@@ -1,0 +1,45 @@
+
+DONE - Get average production rate of all nodes on map
+prefer nodes with > average production rate
+Prefer nodes with less strength
+
+DONE - Get total production rate of my nodes
+DONE - Get total power of my nodes this frame
+
+Prefer enemy nodes to neutral nodes
+
+Only combine with one of my nodes if it wont overflow past 255 strength
+else combine with smaller nearby node (maybe)
+
+Prefer closer nodes
+
+If my total production rate is 
+
+DONE - Set isInCombat to true if any of my nodes are adjacent to any enemy nodes
+- iterate through entire map, for each node, compare with bottom and right neighbors
+- if current is my node, check bot and right for if they are enemy
+- if current is enemy node, check bot and right for if they are mine
+- if true, set isInCombat to true, store position in list of combat positions
+
+If isInCombat, focus resources toward nearest combat positions
+- nodes that are farther than 20 away from any combat position can expand
+
+If expanding, direction toward best node = production*2 + 1/power + 1/distance(upto10) + enemy/5
+
+Pathfinding
+- get node to move toward
+- 
+
+
+
+
+
+
+
+
+
+TO FIX:
+- Pathfinding
+- Don't allow moves to the same location if they will reduce strength
+- Implement combat mode
+- 
